@@ -4,24 +4,20 @@
         <style>
             .re{
                 background-color: red;
-                width: 80px;
-                height: 50px;
+                width: 70px;
+               padding: 10px;
                 margin: 3px;
                 display: flex;
                 justify-content: center;
-                text-align: center  ;
-                padding-top: 20px;
                 float: left;
             }
             .ce{
-                background-color: yellow;
-                width: 80px;
-                height: 50px;
+                background-color: orange;
+                width: 70px;
+                padding: 10px;
                 margin: 3px;
                 display: flex;
                 justify-content: center;
-                text-align: center  ;
-                padding-top: 20px;
                 float: left;
             }
             .clear{
