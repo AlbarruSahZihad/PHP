@@ -4,7 +4,7 @@
     </head>
     <body>
        
-    <form action="proses2.php" method="POST">
+    <form action="prosestgs2.php" method="POST">
 
     <h1 style="text-align: center;">Aplikasi sederhana menghitung rumus <br> luas segitiga dan persegipanjang</h1></h1>
     <hr>

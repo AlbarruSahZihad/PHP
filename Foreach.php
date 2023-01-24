@@ -30,7 +30,7 @@
         
         $no = 1;
         foreach ($menu['Makanan'] as $m){
-            echo $no .".".$m . "<br>";
+            echo $no .".".$m . "<br>";                      
             $no++;
         }
 

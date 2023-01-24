@@ -6,7 +6,7 @@
         <h1>BUKU TAMU</h1>
         <hr>
 
-        <form action="proses.php" method="POST">
+        <form action="prosestgs1.php" method="POST">
             Nama: <input type="text" name="nama"><br>
             Email: <input type="email" name="email"><br>
             Pesan: <textarea name="pesan"></textarea><br><br>

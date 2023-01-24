@@ -3,7 +3,7 @@
         <title>kalkultor</title>
     </head>
     <body>
-        <form action="proses3.php" method="post">
+        <form action="prosestgs3.php" method="post">
         <h1 style="text-align: center;">Kalkulator Sederhana</h1>
         <hr>
 
