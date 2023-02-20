@@ -1,0 +1,10 @@
+ <select name="siswa">
+                            <?php
+                            $query_siswa = mysqli_query($koneksi,"select * from siswa");
+                            while($data_siswa = mysqli_fetch_object($query_siswa)){
+                            ?>
+                            <option value="<?= $data_siswa->id_siswa; ?>"><?= $data_siswa->nama; ?></option>
+                            <?php
+                            }
+                             ?>
+</select>
