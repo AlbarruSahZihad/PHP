@@ -1,5 +1,5 @@
 <?php
-require("koneksi.php");
+require_once("koneksi.php");
 if(isset($_POST['simpan'])){
     // Mengamil data dari inputan Form
 
@@ -9,9 +9,8 @@ if(isset($_POST['simpan'])){
 
 
     // proses penyimpanan ke databases
-    $query = mysqli_query($koneksi,"insert into siswa values(null,'$nis','$nama','$kelas')");
+    $query = mysqli_query($koneksi,"INSERT INTO SISWA VALUES(null,'$nis','$nama','$kelas') ");
     if ($query){
-
         header('location:list_siswa.php');
     }else{
         echo "Gagal menyimpan ke database";

@@ -1,6 +1,7 @@
 <?php
 include_once('koneksi.php');
 @$nis = $_GET['nis'];
+error_reporting(0);
 ?>
 <html>
     <head>
@@ -14,7 +15,7 @@ include_once('koneksi.php');
          <form action="proses-pencarian.php" method="post">
                 <td>NISN</td>
                 <td>:</td>
-                <td><input type="text" autofocus> <input type="submit" value="Cari" name="cari"></td>
+                <td><input type="text" name='nis' autofocus> <input type="submit" value="Cari" name="cari"></td>
          </from>       
             </tr>
             <tr>
@@ -25,13 +26,12 @@ include_once('koneksi.php');
                      <?php
 
                         $query_siswa = mysqli_query($koneksi,"SELECT * FROM siswa WHERE nis='$nis' ");
-                        $nama = mysqli_fetch_array($query_siswa);
+                        $siswa = mysqli_fetch_array($query_siswa);
                         
                     ?>
-                        <input type="hidden" name="idd" value="<?= $nama['nis']; ?> ">
-                        <input type="text" name="siswa" value="<?= $nama['nama']; ?> ">
-                    <?php 
-                    ?>
+                        <input type="hidden" name="idd" value="<?= $siswa['nis']; ?> ">
+                        <input type="text" name="siswa" value="<?= $siswa['nama']; ?> ">
+                   
                     </td>   
                 </tr>
                 <tr>

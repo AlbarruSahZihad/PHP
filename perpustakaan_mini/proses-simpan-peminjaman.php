@@ -2,8 +2,8 @@
 require_once('koneksi.php');
 
 // pengambilan data
-$no_peminjaman = $_POST['siswa'] . "-" . date('Y-m-d');
-$siswa = $_POST['siswa'];
+$no_peminjaman = $_POST['idd'] . "-" . date('Y-m-d');
+$siswa = $_POST['idd'];
 $buku = $_POST['buku'];
 $tgl_pinjam = date('Y-m-d');
 $tgl_kembali = $_POST['tgl_kembali'];
